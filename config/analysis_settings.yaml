@@ -1,0 +1,18 @@
+# Input data
+counts_path: "data/expression_counts.csv"
+metadata_path: "data/sample_metadata.csv"
+
+# Output folder
+results_dir: "results"
+
+# R script (we call this from Python)
+r_script_path: "r_analysis/run_deseq2_analysis.R"
+
+# Gene filtering for ML
+alpha: 0.05
+top_n_genes_for_ml: 200
+
+# ML settings
+test_size: 0.25
+random_state: 42
+model_type: "logistic_regression"
